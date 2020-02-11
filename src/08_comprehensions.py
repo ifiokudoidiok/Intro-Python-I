@@ -41,9 +41,10 @@ x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
 # a = [1,2,3,3,4,6,8]
-y = []
-for n in x:
-    if int(n) % 2 == 0:
-        y.append(n)
+# y = []
+# for n in x:
+#     if int(n) % 2 == 0:
+#         y.append(n)
 
+y = [n for n in x if int(n) % 2 == 0]
 print(y)
